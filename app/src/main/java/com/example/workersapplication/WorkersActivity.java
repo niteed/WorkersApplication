@@ -145,21 +145,21 @@ public class WorkersActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.home:
-                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(),KotMainActivity.class);
                         startActivity(intent);
                         break;
                     case R.id.aboutus:
-                        Intent intent1 = new Intent(getApplicationContext(),AboutUsActivity.class);
+                        Intent intent1 = new Intent(getApplicationContext(),KotAboutUs.class);
                         startActivity(intent1);
                         break;
 
                     case R.id.settings:
-                        Intent intent2 = new Intent(getApplicationContext(),Settings.class);
+                        Intent intent2 = new Intent(getApplicationContext(),KotSettingsActivity.class);
                         startActivity(intent2);
                         break;
 
                     case R.id.profile:
-                        Intent intent3 = new Intent(getApplicationContext(),UserProfile.class);
+                        Intent intent3 = new Intent(getApplicationContext(),KotUserProfileActivity.class);
                         startActivity(intent3);
                         break;
                 }

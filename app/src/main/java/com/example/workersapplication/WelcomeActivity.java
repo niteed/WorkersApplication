@@ -24,14 +24,14 @@ public class WelcomeActivity extends AppCompatActivity {
         user_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),KotMainActivity.class);
                 startActivity(intent);
             }
         });
         workers_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),KotMainActivity.class);
                 startActivity(intent);
             }
         });

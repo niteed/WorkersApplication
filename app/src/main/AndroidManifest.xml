@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkersApplication">
         <activity
+            android:name=".KotSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KotSettongsActivity"
+            android:exported="false" />
+        <activity
             android:name=".KotUserProfileActivity"
             android:exported="false" />
         <activity
@@ -30,12 +36,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".Settings" />
-        <activity android:name=".UserProfile" />
         <activity android:name=".WorkersProfile" />
-        <activity android:name=".AboutUsActivity" />
         <activity android:name=".WorkersActivity" />
-        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -8,8 +8,7 @@ import android.widget.RelativeLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
-class KotAboutUs : AppCompatActivity() {
-
+class KotSettingsActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
 
     private lateinit var navView: NavigationView
@@ -17,8 +16,7 @@ class KotAboutUs : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about_us)
-
+        setContentView(R.layout.activity_settings)
 
         // Call findViewById on the DrawerLayout
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -41,30 +39,30 @@ class KotAboutUs : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
 
-                R.id.aboutus -> {
+                R.id.settings -> {
                     drawerLayout.closeDrawer(Gravity.LEFT)
                     true
                 }
                 R.id.profile -> {
-                    val intent = Intent(this@KotAboutUs, KotUserProfileActivity::class.java)
+                    val intent = Intent(this@KotSettingsActivity, KotUserProfileActivity::class.java)
                     intent.putExtra("key", "Kotlin")
                     startActivity(intent)
                     true
                 }
-                R.id.home -> {
-                    val intent = Intent(this@KotAboutUs, KotMainActivity::class.java)
+                R.id.aboutus -> {
+                    val intent = Intent(this@KotSettingsActivity, KotAboutUs::class.java)
                     intent.putExtra("key", "Kotlin")
                     startActivity(intent)
                     true
                 }
                 R.id.workers -> {
-                    val intent = Intent(this@KotAboutUs, WorkersActivity::class.java)
+                    val intent = Intent(this@KotSettingsActivity, WorkersActivity::class.java)
                     intent.putExtra("key", "Kotlin")
                     startActivity(intent)
                     true
                 }
-                R.id.settings -> {
-                    val intent = Intent(this@KotAboutUs, KotSettingsActivity::class.java)
+                R.id.home -> {
+                    val intent = Intent(this@KotSettingsActivity, KotMainActivity::class.java)
                     intent.putExtra("key", "Kotlin")
                     startActivity(intent)
                     true
@@ -72,5 +70,6 @@ class KotAboutUs : AppCompatActivity() {
                 else -> false
             }
         }
+
     }
 }
