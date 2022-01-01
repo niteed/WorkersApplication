@@ -31,7 +31,7 @@ public class WelcomeActivity extends AppCompatActivity {
         workers_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),KotMainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SignupActivity.class);
                 startActivity(intent);
             }
         });

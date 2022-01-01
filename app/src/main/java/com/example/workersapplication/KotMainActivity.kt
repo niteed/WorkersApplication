@@ -58,7 +58,7 @@ class KotMainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.workers -> {
-                    val intent = Intent(this@KotMainActivity, WorkersActivity::class.java)
+                    val intent = Intent(this@KotMainActivity, KotWorkersActivity::class.java)
                     intent.putExtra("key", "Kotlin")
                     startActivity(intent)
                     true

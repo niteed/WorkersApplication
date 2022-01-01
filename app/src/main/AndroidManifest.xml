@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkersApplication">
         <activity
-            android:name=".KotSettingsActivity"
-            android:exported="false" />
+            android:name=".KotWorkersActivity"
+            android:exported="false" >
+        </activity>
         <activity
-            android:name=".KotSettongsActivity"
+            android:name=".KotSettingsActivity"
             android:exported="false" />
         <activity
             android:name=".KotUserProfileActivity"
@@ -24,11 +25,17 @@
         <activity
             android:name=".KotMainActivity"
             android:exported="false" />
-        <activity
-            android:name=".Trial"
-            android:exported="false" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreenActivity">
+
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

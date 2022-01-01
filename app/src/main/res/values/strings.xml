@@ -46,5 +46,7 @@
     <string name="name_of_worker_complain">John Doe</string>
     <string name="worker_id_complain_title">Enter worker\'s id / username</string>
     <string name="worker_id_complain">john.doe2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,11 +1,12 @@
-package com.example.workersapplication.Database.User
+package com.example.workersapplication.database.User
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+/*Tables in database*/
+@Entity(tableName = "User_Table")
 data class User(
     @PrimaryKey val uid: Int,
     @NonNull @ColumnInfo(name = "firstname") val fname: String,
@@ -13,8 +14,8 @@ data class User(
     @NonNull @ColumnInfo(name = "email") val email: String,
     @NonNull @ColumnInfo(name = "locality") val locality: String,
     @NonNull @ColumnInfo(name = "city") val city: String,
-    @NonNull @ColumnInfo(name = "time") val time: Int,
-    @NonNull @ColumnInfo(name = "expected_salary") val expected_salary: Int,
-    @NonNull @ColumnInfo(name = "requirements") val requirements: String,
+    @ColumnInfo(name = "time") val time: Int,
+    @ColumnInfo(name = "expected_salary") val expected_salary: Int,
+    @ColumnInfo(name = "requirements") val requirements: String,
     @NonNull @ColumnInfo(name = "contact_no_user") val contact_no_user: Int
 )
